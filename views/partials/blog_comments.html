@@ -1,0 +1,23 @@
+<u-row>
+<u-row>
+    <div ng-if="isAdmin" class="row" style="padding:0px;margin-top:-17px">
+        <u-layout align="text-right">
+            <a href="#" class="button hollow text-right">Edit</a>
+            <a ng-click="deleteComment(obj.id)" class="button hollow text-right">Delete</a>
+        </u-layout>
+    </div>
+    </u-row>
+    <u-row>
+        <u-layout l="small-12">
+            <u-row>
+            <u-layout l="small-1">
+                <img ng-src="{{getUser(obj.user_id).picture}}" alt="" class="thumbnail" style="border-radius:50%; width:100%; height:120px;"/>
+            </u-layout>
+            <u-layout l="small-11">
+                <p ng-bind-html="obj.comment"></p>
+                <abbr>{{ obj.createdAt | timeago}}</abbr>
+            </u-layout>
+            </u-row>
+        </u-layout>
+    </u-row>
+</u-row>

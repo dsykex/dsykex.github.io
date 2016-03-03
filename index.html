@@ -1,0 +1,68 @@
+<html ng-app="uno" ng-controller="AppCtrl">
+    <head>
+        <meta name="fragment" content="#">
+        <link rel="stylesheet" href="css/animate.css" />
+        <link rel="stylesheet" href="css/foundation.css" />
+        <link rel="stylesheet" href="css/textAngular.css"/>
+        <link rel="stylesheet" href="css/foundation.css" />
+        <link rel="stylesheet" href="css/foundation-icons.css" />
+        <link rel="stylesheet" href="css/motion-ui.css" />
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/app.css" />
+        <title>UnoCMS: Create something awesome!</title>
+    </head>
+    <body ng-controller="CustomCtrl" ng-init="uinfo()">
+        <div class="off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+                <div class="off-canvas position-left" style="background:#fff" id="offCanvas" data-off-canvas>
+                    <ul class="nav-list">
+                        <li><i class="fi-"></i><a ng-href="#/home">Home</a></li>
+                    </ul>
+                </div>
+                <div class="off-canvas-content" data-off-canvas-content style="overflow:hidden;">
+                    <div class="title-bar" style="background:#1e1e1e;">
+                      <div class="title-bar-left">
+                        <a class="button hollow small" style="margin-bottom:-2px; margin-right:10px; padding:10px;" data-open="offCanvas"><i class="fi-list"></i></a>
+                        <span class="title-bar-title">Site Title</span>
+                      </div>
+                    </div>
+                    <div>
+                        <div id="ng" ng-view class="animated"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js" type="text/javascript"></script>
+        
+        <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
+        
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular-sanitize.min.js'></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.7/angular-filter.min.js" type="text/javascript"></script>
+        <script src="js/dep/foundation.min.js"></script>
+        <script src="js/dep/angularjs-geolocation.min.js"></script>
+        <script src="js/dep/moment.js"></script>
+        <script src="js/dep/moment-timezone-with-data.min.js"></script>
+        <script src="js/dep/angular-moment.js"></script>
+        <script src="js/dep/ngtimeago.js"></script>
+        <script src="js/dep/ng-file-upload.min.js"></script>
+
+        <!-- AngularFire -->
+        <script src="js/dep/rangy-core.js"></script>
+        <script src="js/dep/angular-route.min.js" type="text/javascript"></script>
+        <script src="js/dep/ng-file-upload.min.js" type="text/javascript"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/MyCtrl.js"></script>
+        <script src="js/route_data.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/directives/directives.js"></script>
+        <script src="js/factory/auth.js"></script>
+        <script src="js/factory/functions.js"></script>
+        <script>
+            $(document).foundation();
+        </script>
+    </body>
+</html>
